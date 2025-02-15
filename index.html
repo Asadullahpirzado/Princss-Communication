@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Princess Communication | Professional Device Repair & Photo Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
     <style>
         * {
             margin: 0;
@@ -50,14 +51,6 @@
             z-index: 1000;
         }
 
-        .nav-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
@@ -84,11 +77,6 @@
         .services {
             padding: 5rem 2rem;
             background: var(--light);
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
         }
 
         .services-grid {
@@ -215,6 +203,19 @@
             background: var(--secondary);
         }
 
+        /* WhatsApp Button */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            padding: 1rem;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-links {
@@ -245,8 +246,7 @@
         <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Expert Mobile Repair & Photo Services</h1>
         <p style="font-size: 1.2rem; margin-bottom: 2rem;">Premium services with warranty guarantee</p>
         <div style="display: flex; gap: 1rem; justify-content: center;">
-           <button class="btn" onclick="location.href='#pricing'">Book Now</button>
-
+            <button class="btn" onclick="location.href='#pricing'">Book Now</button>
             <button class="btn" style="background: var(--accent);" onclick="location.href='#contact'">Learn More</button>
         </div>
     </header>
@@ -276,108 +276,113 @@
     </section>
 
     <section class="pricing" id="pricing">
-        <section class="pricing" id="pricing">
-    <div class="section-title">
-        <h2>Our Services & Pricing</h2>
-        <p>We offer professional mobile repair and photo services at affordable rates.</p>
-    </div>
-    <div class="price-table">
-        
-        <div class="price-card">
-            <h3>📱 Mobile Software Fix</h3>
-            <div class="price">Rs. 200 - 500</div>
-            <p>Update, fix, and optimize your mobile software for better performance.</p>
+        <div class="section-title">
+            <h2>Our Services & Pricing</h2>
+            <p>We offer professional mobile repair and photo services at affordable rates.</p>
         </div>
+        <div class="price-table">
+            <div class="price-card">
+                <h3>📱 Mobile Software Fix</h3>
+                <div class="price">Rs. 200 - 500</div>
+                <p>Update, fix, and optimize your mobile software for better performance.</p>
+            </div>
+            <div class="price-card">
+                <h3>🔌 Charger Port Repair</h3>
+                <div class="price">Rs. 200 - 500</div>
+                <p>Fix charging issues and ensure smooth power connectivity.</p>
+            </div>
+            <div class="price-card">
+                <h3>🎤 Microphone Repair</h3>
+                <div class="price">Rs. 100 - 400</div>
+                <p>Resolve voice issues and restore microphone clarity.</p>
+            </div>
+            <div class="price-card">
+                <h3>📲 Touch Screen Replacement</h3>
+                <div class="price">Rs. 700 - 5000</div>
+                <p>Replace broken or unresponsive touch screens with high-quality parts.</p>
+            </div>
+            <div class="price-card">
+                <h3>📷 Camera Repair</h3>
+                <div class="price">Rs. 200 - 1000</div>
+                <p>Fix camera issues for clear and sharp images.</p>
+            </div>
+            <div class="price-card">
+                <h3>🖼️ Photo Printing</h3>
+                <div class="price">Rs. 80 - 100</div>
+                <p>High-quality prints in different sizes and styles.</p>
+            </div>
+            <div class="price-card">
+                <h3>🎨 Photo Editing</h3>
+                <div class="price">Custom Pricing</div>
+                <p>Professional retouching, background removal, and enhancements.</p>
+            </div>
+        </div>
+    </section>
 
-        <div class="price-card">
-            <h3>🔌 Charger Port Repair</h3>
-            <div class="price">Rs. 200 - 500</div>
-            <p>Fix charging issues and ensure smooth power connectivity.</p>
+    <section class="gallery" id="gallery">
+        <div class="section-title">
+            <h2>Our Work</h2>
+            <p>See our recent projects</p>
         </div>
-
-        <div class="price-card">
-            <h3>🎤 Microphone Repair</h3>
-            <div class="price">Rs. 100 - 400</div>
-            <p>Resolve voice issues and restore microphone clarity.</p>
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="photo1.jpg" alt="Edited Photo 1">
+            </div>
+            <div class="photo-item">
+                <img src="photo2.jpg" alt="Edited Photo 2">
+            </div>
+            <div class="photo-item">
+                <img src="photo3.jpg" alt="Edited Photo 3">
+            </div>
+            <div class="photo-item">
+                <img src="photo4.jpg" alt="Edited Photo 4">
+            </div>
+            <div class="photo-item">
+                <img src="photo5.jpg" alt="Edited Photo 5">
+            </div>
         </div>
-
-        <div class="price-card">
-            <h3>📲 Touch Screen Replacement</h3>
-            <div class="price">Rs. 700 - 5000</div>
-            <p>Replace broken or unresponsive touch screens with high-quality parts.</p>
-        </div>
-
-        <div class="price-card">
-            <h3>📷 Camera Repair</h3>
-            <div class="price">Rs. 200 - 1000</div>
-            <p>Fix camera issues for clear and sharp images.</p>
-        </div>
-
-        <div class="price-card">
-            <h3>🖼️ Photo Printing</h3>
-            <div class="price">Rs. 80 - 100</div>
-            <p>High-quality prints in different sizes and styles.</p>
-        </div>
-
-        <div class="price-card">
-            <h3>🎨 Photo Editing</h3>
-            <div class="price">Custom Pricing</div>
-            <p>Professional retouching, background removal, and enhancements.</p>
-        </div>
-
-    </div>
-</section>
-
-
-  <section class="gallery" id="gallery">
-    <div class="section-title">
-        <h2>Our Work</h2>
-        <p>See our recent projects</p>
-    </div>
-    <div class="photo-grid">
-        <div class="photo-item">
-            <img src="photo1.jpg" alt="Edited Photo 1">
-        </div>
-        <div class="photo-item">
-            <img src="photo2.jpg" alt="Edited Photo 2">
-        </div>
-        <div class="photo-item">
-            <img src="photo3.jpg" alt="Edited Photo 3">
-        </div>
-        <div class="photo-item">
-            <img src="photo4.jpg" alt="Edited Photo 4">
-        </div>
-        <div class="photo-item">
-            <img src="photo5.jpg" alt="Edited Photo 5">
-        </div>
-    </div>
+    </section>
 
     <section class="contact" id="contact">
         <div class="contact-grid">
             <div>
                 <h2 style="margin-bottom: 1rem;">Contact Us</h2>
-                <p style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt"></i>  Princess Communication – Conveniently Located Opposite PCO Fill Station, Jahan Khan</p>
-                <p style="margin-bottom: 1rem;"><i class="fas fa-phone"></i>  03147118452</p>
-                <p style="margin-bottom: 2rem;"><i class="fas fa-envelope"></i>  waliullah00314@gmail.com</p>
+                <p style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt"></i> Princess Communication – Conveniently Located Opposite PCO Fill Station, Jahan Khan</p>
+                <p style="margin-bottom: 1rem;"><i class="fas fa-phone"></i> 03147118452</p>
+                <p style="margin-bottom: 2rem;"><i class="fas fa-envelope"></i> waliullah00314@gmail.com</p>
                 <div class="social-links">
                     <a href="https://www.facebook.com/share/1Hfhm5TJvT/?mibextid=qi2Omg" style="color: white; margin-right: 1rem;"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.instagram.com/waliullahbhayo?igsh=MTlnYWZkYjVucmljMw==" style="color: white; margin-right: 1rem;"><i class="fab fa-instagram"></i></a>
                     <a href="#" style="color: white;"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
-          <form class="contact-form" action="https://formsubmit.co/your-email@example.com" method="POST">
-    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
-    <input type="text" name="name" placeholder="Name" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="message" placeholder="Message" rows="5" required></textarea>
-    <button class="btn" type="submit">Send Message</button>
-</form>
-
+            <form class="contact-form" action="https://formsubmit.co/waliullah00314@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                <button class="btn" type="submit">Send Message</button>
+            </form>
         </div>
     </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/03147118452" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <footer style="background: var(--dark); color: white; text-align: center; padding: 2rem;">
         <p>© 2025 Princess Communication. All rights reserved.</p>
     </footer>
+
+    <!-- Lightbox Script -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.querySelector('.photo-grid'), {
+            selector: '.photo-item',
+            download: false,
+            share: false
+        });
+    </script>
 </body>
 </html>
